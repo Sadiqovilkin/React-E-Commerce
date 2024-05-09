@@ -2,9 +2,9 @@ import React from 'react'
 import { Button, TextField } from "@mui/material";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import UsersSchema from '../../../validations/user.validation';
 import { useFormik } from 'formik';
 import {  useNavigate, useOutletContext } from 'react-router-dom';
+import AdminLoginSchema from '../../../validations/admin.validation';
 const Login = () => {
   const [users, setAdminID, setLocalAdminID] = useOutletContext();
   const navigate = useNavigate();
@@ -34,8 +34,8 @@ const Login = () => {
         values.username = '';
         values.password = '';
       }
-
     },
+    validationSchema: AdminLoginSchema
     
   })
   return (
