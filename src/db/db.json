@@ -42,6 +42,17 @@
       "createdAt": "2024-05-09T17:41:49.451Z",
       "role": "client",
       "basketItems": []
+    },
+    {
+      "id": "b0b1",
+      "username": "elnurxo",
+      "password": "Elnur123",
+      "email": "Elnur12@gmail.com",
+      "profileImg": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/media_bank/202309/elon-musk-252648408-16x9.jpg?VersionId=9KYZpqpoY3WvH8eVZg54mmkpTGfvPCWj&size=690:388",
+      "balance": "999",
+      "createdAt": "2024-05-09T18:05:35.827Z",
+      "role": "client",
+      "basketItems": []
     }
   ],
   "products": [],

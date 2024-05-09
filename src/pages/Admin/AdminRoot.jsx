@@ -14,9 +14,6 @@ const AdminRoot = () => {
     controller.getAll(endpoints.users).then((resp) => {
       setUsers(resp.data);
     });
-    // controller.getAll(endpoints.countries).then((resp)=>{
-    //   setCountries(resp.data);
-    // })
     if (adminID===null) {
       navigate('/admin/login');
     }

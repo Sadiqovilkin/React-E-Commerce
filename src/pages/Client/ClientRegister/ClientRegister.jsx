@@ -7,6 +7,8 @@ import controller from '../../../services'
 import { endpoints } from '../../../services/constants'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css";
+import Swal from 'sweetalert2'
 
 const ClientRegister = () => {
   const navigate = useNavigate();
@@ -22,12 +24,16 @@ const ClientRegister = () => {
     onSubmit: values =>{
       const newUser = new Users(values.username,values.password,values.email,values.profileImg,values.balance)
       controller.post(endpoints.users,newUser)
-      toast.success("Succsess register!", {
-        autoClose: 1500,
-      });
-      setTimeout(() => {
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "User succses Register",
+        showConfirmButton: false,
+        timer: 1500
+      }).then(()=>{
         navigate("/login");
-      }, 1500);
+      })
+
     },
     validationSchema:UsersSchema
   })
