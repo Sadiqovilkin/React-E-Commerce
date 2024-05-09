@@ -58,7 +58,6 @@ const AdminHeader = ({ adminID, setAdminID, setLocalAdminID }) => {
               <Button color="inherit">
                 <Link style={{color:'white'}} to={"/admin/messages"}>Messages</Link>
               </Button>
-
               <Button
                 onClick={() => {
                   Swal.fire({

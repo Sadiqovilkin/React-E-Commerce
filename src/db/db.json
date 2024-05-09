@@ -1,8 +1,14 @@
 {
     "users":[
         {
-            "id":1,
-            "username":"sadiqov"
+            "id":"a1c2",
+            "username":"Admin",
+            "password":"Admin123",
+            "email":"admin60@gmail.com",
+            "profileImg":"testimg",
+            "balance":"999999",
+            "role":"admin",
+            "basketItems":[]
         }
     ],
     "products":[],
