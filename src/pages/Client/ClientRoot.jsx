@@ -16,7 +16,7 @@ const ClientRoot = () => {
   }, []);
   return (
     <>
-    <ClientHeader/>
+    <ClientHeader userID={userID} setUserID={setUserID} setLocalUserID={setLocalUserID}/>
     <Outlet context={[users,setUserID, setLocalUserID,]}/>
     </>
   )
