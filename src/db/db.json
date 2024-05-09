@@ -1,18 +1,51 @@
 {
-    "users":[
-        {
-            "id":"a1c2",
-            "username":"Admin",
-            "password":"Admin123",
-            "email":"admin60@gmail.com",
-            "profileImg":"testimg",
-            "balance":"999999",
-            "role":"admin",
-            "basketItems":[]
-        }
-    ],
-    "products":[],
-    "messages":[],
-    "orders":[],
-    "categories":[]
+  "users": [
+    {
+      "id": "a1c2",
+      "username": "Admin",
+      "password": "Admin123",
+      "email": "admin60@gmail.com",
+      "profileImg": "testimg",
+      "balance": "999999",
+      "role": "admin",
+      "basketItems": []
+    },
+    {
+      "id": "4467",
+      "username": "xda",
+      "password": "Admin123",
+      "email": "Admin@gmail.com",
+      "profileImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDST9PjCDk3XQWJzdOXeWyG7H57ShmATZ7OLFxmuXaGQ&s",
+      "balance": "1000",
+      "createdAt": "2024-05-09T17:39:15.582Z",
+      "role": "client",
+      "basketItems": []
+    },
+    {
+      "id": "a118",
+      "username": "Sadiqov",
+      "password": "Ilkin1234",
+      "email": "ilkin@gmail.com",
+      "profileImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMdxoy_bHgIrEGckeVLqGRxU2DmHTjKPVJjKFF4F_oiw&s",
+      "balance": "660",
+      "createdAt": "2024-05-09T17:40:27.747Z",
+      "role": "client",
+      "basketItems": []
+    },
+    {
+      "id": "af61",
+      "username": "safarov",
+      "password": "Nurlan123",
+      "email": "safarov@gmail.com",
+      "profileImg": "https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg",
+      "balance": "452",
+      "createdAt": "2024-05-09T17:41:49.451Z",
+      "role": "client",
+      "basketItems": []
+    }
+  ],
+  "products": [],
+  "messages": [],
+  "orders": [],
+  "categories": []
 }
