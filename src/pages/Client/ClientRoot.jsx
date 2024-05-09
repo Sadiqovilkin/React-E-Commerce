@@ -9,15 +9,19 @@ const ClientRoot = () => {
   const[localUserID, setLocalUserID] = useLocalStorage('userID', null);
   const [userID, setUserID] = useState(localID ? localID : null);
   const [users, setUsers] = useState([]);
+  const [data, setData] = useState([]);
   useEffect(() => {
     controller.getAll(endpoints.users).then((resp) => {
       setUsers(resp.data);
+    });
+    controller.getAll(endpoints.products).then((resp) => {
+      setData(resp.data);
     });
   }, []);
   return (
     <>
     <ClientHeader userID={userID} setUserID={setUserID} setLocalUserID={setLocalUserID}/>
-    <Outlet context={[users,setUserID, setLocalUserID,]}/>
+    <Outlet context={[users,setUserID, setLocalUserID,data]}/>
     </>
   )
 }

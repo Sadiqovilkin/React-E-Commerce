@@ -55,7 +55,52 @@
       "basketItems": []
     }
   ],
-  "products": [],
+  "products": [
+    {
+      "id":"1221",
+      "name":"product1",
+      "salePrice":100,
+      "costPrice":50,
+      "discountPercentage":20,
+      "imgSrc":"test",
+      "description":"lorem implus",
+      "categoryId":"phone",
+      "stock":10
+    },
+    {
+      "id":"1v24",
+      "name":"product2",
+      "salePrice":100,
+      "costPrice":50,
+      "discountPercentage":20,
+      "imgSrc":"test",
+      "description":"lorem implus",
+      "categoryId":"phone",
+      "stock":10
+    },
+    {
+      "id":"1211",
+      "name":"product3",
+      "salePrice":100,
+      "costPrice":50,
+      "discountPercentage":20,
+      "imgSrc":"test",
+      "description":"lorem implus",
+      "categoryId":"phone",
+      "stock":10
+    },
+    {
+      "id":"12a1",
+      "name":"product4",
+      "salePrice":100,
+      "costPrice":50,
+      "discountPercentage":20,
+      "imgSrc":"test",
+      "description":"lorem implus",
+      "categoryId":"phone",
+      "stock":10
+    }
+  ],
   "messages": [],
   "orders": [],
   "categories": []
