@@ -1,3 +1,22 @@
+import AddCategory from "../pages/Admin/AddCategory/AddCategory";
+import AddProduct from "../pages/Admin/AddProduct/AddProduct";
+import AdminRoot from "../pages/Admin/AdminRoot";
+import Categorys from "../pages/Admin/Categorys/Categorys";
+import Dashboard from "../pages/Admin/Dashboard/Dashboard";
+import Login from "../pages/Admin/Login/Login";
+import Messages from "../pages/Admin/Messages/Messages";
+import Orders from "../pages/Admin/Orders/Orders";
+import Products from "../pages/Admin/Products/Products";
+import Users from "../pages/Admin/Users/Users";
+import Basket from "../pages/Client/Basket/Basket";
+import ClientLogin from "../pages/Client/ClientLogin/ClientLogin";
+import ClientProducts from "../pages/Client/ClientProducts/ClientProducts";
+import ClientRegister from "../pages/Client/ClientRegister/ClientRegister";
+import ClientRoot from "../pages/Client/ClientRoot";
+import ContactUs from "../pages/Client/ContactUs/ContactUs";
+import Home from "../pages/Client/Home/Home";
+import ProductDetail from "../pages/Client/ProductDetail/ProductDetail";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 export const ROUTES = [
   //admin root
@@ -10,20 +29,36 @@ export const ROUTES = [
         element: <Dashboard />,
       },
       {
-        path: "countries",
-        element: <AdminCountries />,
+        path: "add-category",
+        element: < AddCategory/>,
       },
       {
-        path: "countries/:id",
-        element: <AdminCountryDetail />,
+        path: "categorys",
+        element: <Categorys />,
       },
       {
         path: "login",
-        element: <AdminLogin />,
+        element: <Login />,
       },
       {
-        path: "add-country",
-        element: <AddCountry />,
+        path: "add-product",
+        element: <AddProduct />,
+      },
+      {
+        path: "products",
+        element: <Products />,
+      },
+      {
+        path: "users",
+        element: <Users />,
+      },
+      {
+        path: "orders",
+        element: <Orders />,
+      },
+      {
+        path: "messages",
+        element: <Messages/>,
       },
     ],
   },
@@ -37,21 +72,33 @@ export const ROUTES = [
         element: <Home />,
       },
       {
-        path: "about",
-        element: <About />,
-      },
-      {
         path: "contact",
-        element: <Contact />,
+        element: <ContactUs />,
       },
       {
-        path: "countries",
-        element: <ClientCountries />,
+        path: "basket",
+        element: <Basket />,
       },
       {
-        path: "countries/:id",
-        element: <ClientCountryDetail />,
+        path: "login",
+        element: <ClientLogin />,
+      },
+      {
+        path: "register",
+        element: <ClientRegister />,
+      },
+      {
+        path: "clientproducts",
+        element: <ClientProducts />,
+      },
+      {
+        path: "clientproducts/:id",
+        element: <ProductDetail />,
       },
     ],
   },
+  {
+    path:"*",
+    element: <ErrorPage/>
+  }
 ];
