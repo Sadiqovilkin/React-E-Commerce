@@ -1,0 +1,12 @@
+{
+    "users":[
+        {
+            "id":1,
+            "username":"sadiqov"
+        }
+    ],
+    "products":[],
+    "messages":[],
+    "orders":[],
+    "categories":[]
+}
