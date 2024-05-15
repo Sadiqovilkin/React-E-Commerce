@@ -22,6 +22,7 @@ const ClientRegister = () => {
       balance:''
     },
     onSubmit: values =>{
+      console.log(values);
       const newUser = new Users(values.username,values.password,values.email,values.profileImg,values.balance)
       controller.post(endpoints.users,newUser)
       Swal.fire({

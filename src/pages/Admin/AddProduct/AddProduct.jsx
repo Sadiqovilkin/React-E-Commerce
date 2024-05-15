@@ -32,7 +32,8 @@ const AddProduct = () => {
     },
     onSubmit:(values)=> {
      const newProduct = new Products(values.name,values.salePrice,values.costPrice,values.imgSrc,values.discountPercentage,values.description,values.categoryId,values.stock)
-      controller.post(endpoints.products, newProduct)
+     console.log(newProduct);
+     controller.post(endpoints.products, newProduct)
   
       Swal.fire({
         position: "top-center",

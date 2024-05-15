@@ -4,7 +4,6 @@ class Messages {
         this.email=email;
         this.title=title;
         this.message=message;
-        this.createdAt=new Date();
     }
 }
 export default Messages

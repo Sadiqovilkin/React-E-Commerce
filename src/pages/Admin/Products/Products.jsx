@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import { Space, Table, Modal, Input } from 'antd';
 import { Button } from '@mui/material';
-
-
 import { useEffect } from 'react';
-import { Formik } from 'formik';
-
+// import { Formik } from 'formik';
 import ModeEditIcon from "@mui/icons-material/ModeEdit";
 import Delete from '../../../components/Admin/Delete/Delete';
 import { endpoints } from '../../../services/constants';
 import controller from '../../../services';
+// import { Space } from 'antd';
 const { TextArea } = Input;
 
 
@@ -134,7 +132,7 @@ const Products = () => {
       title:"Delete",
       key:"delete",
       render:(text , record)=>(
-        <Delete  getData={getData} text={text} id={record.id}/>
+        <Delete  getData={getData} text={text} id={record._id}/>
       )
     }
     
@@ -151,7 +149,7 @@ return (
       <Button onClick={clearFilters}>Clear filters</Button>
       <Button onClick={clearAll}>Clear filters and sorters</Button>
     </Space>
-    <Table columns={columns} dataSource={data} onChange={handleChange} />
+    <Table columns={columns} dataSource={data.data} onChange={handleChange} />
     <Modal title="Country" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
       <form style={{ display: "flex", flexDirection: 'column', gap: "12px" }}>
         <Input onChange={(e) => setEditModal({ ...editModal, name: e.target.value })} value={editModal?.name} type='text' placeholder="Name" />

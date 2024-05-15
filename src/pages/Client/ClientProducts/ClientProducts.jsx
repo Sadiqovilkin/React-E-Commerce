@@ -3,12 +3,12 @@ import { useOutletContext } from 'react-router-dom'
 
 const ClientProducts = () => {
 const [users, setAdminID, setLocalAdminID,data]=useOutletContext()
-console.log(data);
+console.log(data.data);
   return (
     <div className="container">
       <div className="row">
-     { data && data.map((el)=>
-         <div className="col-lg-3" key={el.id}>
+     { data.data && data.data.map((el)=>
+         <div className="col-lg-3" key={el._id}>
          <div className="card">
            <div className="card-img">
              <img src={el.imgSrc} alt="" />

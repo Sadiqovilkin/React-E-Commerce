@@ -14,15 +14,14 @@ const Login = () => {
       password:''
     },
     onSubmit: values => {
-      const foundAdmin = users.find(
-        (x) =>
-          x.username == values.username &&
-          x.password == values.password &&
-          x.role == "admin"
+      console.log(users);
+      const foundAdmin = users.data.find(
+        (x) =>x.username == values.username &&x.password == values.password && x.role == "admin"
+        
       );
       if (foundAdmin) {
-        setAdminID(foundAdmin.id);
-        setLocalAdminID(foundAdmin.id);
+        setAdminID(foundAdmin._id);
+        setLocalAdminID(foundAdmin._id);
         toast.success("Admin logged in!",{
           autoClose: 1500
         })

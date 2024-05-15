@@ -5,7 +5,6 @@ class Users {
         this.email=email;
         this.profileImg=profileImg;
         this.balance=balance;
-        this.createdAt=new Date();
         this.role="client";
         this.basketItems=[]
     }
