@@ -12,6 +12,7 @@ const ClientRoot = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     controller.getAll(endpoints.users).then((resp) => {
+      // console.log(resp);
       setUsers(resp.data);
     });
     controller.getAll(endpoints.products).then((resp) => {

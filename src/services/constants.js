@@ -1,4 +1,4 @@
-export const BASE_URL = "http://localhost:6000/api/";
+export const BASE_URL = "http://localhost:6060/api/";
 export const endpoints = {
   users: "users",
   products: "products",

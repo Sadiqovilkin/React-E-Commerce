@@ -8,6 +8,7 @@ import Swal from 'sweetalert2'
 
 const ClientLogin = () => {
   const [users,setUserID, setLocalUserID,] = useOutletContext();
+  console.log(users);
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues:{
